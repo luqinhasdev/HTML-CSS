@@ -3,59 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOGO DA FORCA</title>
     <link rel="stylesheet" href="style.css" />
-    <title>14/04/2025</title>
+    <script src="script.js"></script>
   </head>
   <body>
-    <h1>DESENVOLVIMENTO WEB</h1>
-    <img src="CURRÍCULO.png" width="700px" alt="Currículo" />
-
-    <ol>
-      <li>
-        <a id="inicio" href="#inicio">Início</a>
-      </li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ol>
-
-    <div class="section">
-      <h2>Perfil</h2>
-      <p><strong>Nomes:</strong> Lucas e Christian</p>
-      <p><strong>Idades:</strong> 0 e 100</p>
-      <p><strong>Cidade:</strong> Palhoça</p>
-      <p><strong>Nossas Redes:</strong></p>
-      <div class="social-icons">
-        <a href="https://github.com/BrunoMartinsGameDev"
-          ><img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-            width="40px"
-            alt="GitHub"
-        /></a>
-
-        <a href="https://www.linkedin.com/in/brunomartinsgamedev/">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
-            width="40px"
-            alt="LinkedIn"
-          />
-        </a>
+    <h1 id="Title">DESCUBRA A PALAVRA SECRETA!</h1>
+    <div class="container">
+      <div class="texts">
+        <h3>DIGITE A PALAVRA SECRETA</h3>
+        <input id="secret" type="password" onkeyup="enableStartButton()" />
+        <button id="buttonStart" disabled onclick="startGame()">
+          INICIAR O JOGO
+        </button>
+        <h3>DIGITE UMA LETRA:</h3>
+        <input type="text" id="try" disabled maxlength="1" />
+        <button id="checkbutton" disabled onclick="">CONFIRMAR LETRA</button>
+        <h1 id="panel"></h1>
+        <h1>ERROS:</h1>
+        <h1 id="wrongs">_</h1>
+        <button id="restart" hidden onclick="">REINICIAR JOGO</button>
       </div>
-    </div>
-
-    <div class="section">
-      <h3 id="sobre">Sobre nós</h3>
-      <p>Somos Garotos de Programa de C#</p>
-    </div>
-
-    <div class="section">
-      <h3 id="contato">Contato</h3>
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:bruno.abreu@edu.sc.senai.br" class="email-link"
-          >bruno.abreu@edu.sc.senai.br</a
-        >
-      </p>
-      <p><strong>Telefone:</strong> 4002-8922</p>
+      <div class="draw">
+        <img src="HangMan_Game/1.png" alt="" />
+      </div>
     </div>
   </body>
 </html>
