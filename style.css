@@ -1,70 +1,89 @@
-#Title {
-  text-align: center;
-  color: #5481e1;
-  font-family: "Courier New", Courier, monospace;
-  font-style: italic;
-}
-
-#Credits {
-  text-align: center;
-  color: #9f5255;
-  font-family: "Courier New", Courier, monospace;
-  font-style: italic;
-  margin-top: 0;
-}
-
-body {
-  background-color: #1b1e33;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1,
+h2,
 h3 {
-  text-align: center;
-  color: #0051ff;
-  font-style: italic;
-  font-weight: 200;
+  color: #2c3e50;
+  margin-bottom: 10px;
 }
 
-h4 {
-  text-align: center;
-  color: #5481e1;
-  font-style: italic;
-  font-weight: 200;
+img {
+  display: block;
+  margin: 20px auto;
 }
 
-h5 {
-  text-align: center;
-  color: #e16a54;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
-  font-weight: 200;
+ol {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
 }
 
-h5:hover {
+ol li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  background-color: #3188e6;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+ol li a:hover {
+  transition: all ease-in 0.3s;
+  font-size: large;
+  color: #ffffff;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 20px 0;
+}
+
+.social-icons img {
+  transition: transform 0.3s ease;
   cursor: pointer;
-  color: aqua;
 }
 
-.container {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
+.social-icons img:hover {
+  transform: scale(1.1);
 }
 
-.info {
-  flex: 1;
-  border: 1px solid black;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+.section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+a.email-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a.email-link:hover {
+  text-decoration: underline;
 }

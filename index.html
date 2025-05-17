@@ -3,108 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git Commands Database.</title>
-    <link rel="StyleSheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>14/04/2025</title>
   </head>
   <body>
-    <h1 id="Title">Git Commands Database.</h1>
-    <h2 id="Credits">by luqinhasdev & cristovão-colombo</h2>
-    <div class="container">
-      <div id="info">
-        <h3>Configuração de Usuário (❁´◡`❁)</h3>
-        <h4>> Definição de Nome de Usuário:</h4>
-        <h5 class="h5copy">$ git config --global user.name "USERNAME"</h5>
+    <h1>DESENVOLVIMENTO WEB</h1>
+    <img src="CURRÍCULO.png" width="700px" alt="Currículo" />
 
-        <h4>> Definição de Email de Usuário:</h4>
-        <h5>$ config --global user.email "EMAIL"</h5>
-        <h3>Inicialização de Repositório (❁´◡`❁)</h3>
+    <ol>
+      <li>
+        <a id="inicio" href="#inicio">Início</a>
+      </li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ol>
 
-        <h4>> Criação de Repositório Git:</h4>
-        <h5>$ git init</h5>
-        <h4>> Clonagem de Repositório Existente:</h4>
-        <h5>$ git clone "URL"</h5>
+    <div class="section">
+      <h2>Perfil</h2>
+      <p><strong>Nomes:</strong> Lucas e Christian</p>
+      <p><strong>Idades:</strong> 0 e 100</p>
+      <p><strong>Cidade:</strong> Palhoça</p>
+      <p><strong>Nossas Redes:</strong></p>
+      <div class="social-icons">
+        <a href="https://github.com/BrunoMartinsGameDev"
+          ><img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+            width="40px"
+            alt="GitHub"
+        /></a>
 
-        <h3>Verificação de Status (❁´◡`❁)</h3>
-        <h4>> Verificação do Status Atual:</h4>
-        <h5>$ git status</h5>
-
-        <h3>Trabalhando com Arquivos (❁´◡`❁)</h3>
-        <h4>> Adcionar Todos os Arquivos no Repositório:</h4>
-        <h5>$ git add .</h5>
-        <h4>> Adcionar Arquivos Específicos no Repositório:</h4>
-        <h5>$ git add "ARQUIVO"</h5>
-        <h4>> Remover Arquivos Específicos:</h4>
-        <h5>$ git rm "ARQUIVO"</h5>
-        <h4>> Desfazer Alterações em Arquivos Específicos:</h4>
-        <h5>$ git checkout -- "ARQUIVO"</h5>
-        <h3>Trabalhando com "Commits" (❁´◡`❁)</h3>
-        <h4>> Realizar uma Commit:</h4>
-        <h5>$ git commit -m "MENSAGEM"</h5>
-        <h4>> Commitar Todas as Mudanças:</h4>
-        <h5>$ git commit -a -m "MENSAGEM"</h5>
-      </div>
-      <div id="info">
-        <h3>Trabalhando com "Branches" (❁´◡`❁)</h3>
-        <h4>> Criando uma Branch:</h4>
-        <h5>$ git branch "NOME"</h5>
-        <h4>> Transferindo para uma Branch:</h4>
-        <h5>$ git checkout "NOME"</h5>
-        <h4>> Criando e Transferindo para uma Branch:</h4>
-        <h5>$ git checkout -b "NOME"</h5>
-        <h4>> Mostrar Lista de Branches:</h4>
-        <h5>$ git branch</h5>
-        <h4>> Excluindo Branches Localmente:</h4>
-        <h5>$ git branch -d "NOME"</h5>
-        <h3>Sincronizando com Repositório Remoto (GitHub) (❁´◡`❁)</h3>
-        <h4>> Adcionando o Repositório Remoto:</h4>
-        <h5>$ git remote add origin "URL"</h5>
-        <h4>> Puxando Alterações do Repositório Remoto:</h4>
-        <h5>$ git pull origin "NOME BRANCH"</h5>
-        <h4>> Enviando Alterações ao Repositório Remoto:</h4>
-        <h5>$ git push origin "NOME BRANCH"</h5>
-        <h3>Histórico de Commits (❁´◡`❁)</h3>
-        <h4>> Ver o Histórico de Commits:</h4>
-        <h5>$ git log</h5>
-        <h4>> Ver o Histórico Conciso do Histórico de Commits:</h4>
-        <h5>$ git log --oneline</h5>
-        <h3>Mesclando Branches (❁´◡`❁)</h3>
-        <h4>> Mesclando uma Branch na Branch Atual:</h4>
-        <h5>$ git merge "NOME BRANCH"</h5>
-        <h3>Rebase de uma Branch (❁´◡`❁)</h3>
-        <h5>$ git rebase "NOME BRANCH"</h5>
-      </div>
-      <div id="info">
-        <h3>Desfazendo Ações (❁´◡`❁)</h3>
-        <h4>> Desfazendo o Último Commit, porém Mantendo Alterações:</h4>
-        <h5>$ git reset --soft HEAD~1</h5>
-        <h4>> Desfazendo O Último Commit, Mantendo Alterações:</h4>
-        <h5>$ git reset --hard HEAD~1</h5>
-        <h3>Armazenar Informações Temporariamente (❁´◡`❁)</h3>
-        <h4>> Armazenar Alterações não Commitadas:</h4>
-        <h5>$ git stash</h5>
-        <h4>> Listar Stashes:</h4>
-        <h5>$ git stash list</h5>
-        <h4>> Aplicar o Stash mais Recente:</h4>
-        <h5>$ git stash apply</h5>
-        <h4>> Remover o Stash Aplicado:</h4>
-        <h5>$ git stash drop</h5>
-        <h3>Marcação de Versões</h3>
-        <h4>> Criar uma Tag:</h4>
-        <h5>$ git tag "NOME TAG"</h5>
-        <h4>> Listar Todas as Tags:</h4>
-        <h5>$ git tag</h5>
-        <h4>> Enviar Tags para o Repositório Remoto:</h4>
-        <h5>$ git push origin "NOME TAG"</h5>
-        <h3>Trabalhando com Remotes:</h3>
-        <h4>> Ver os Repositórios Remotos Configurados:</h4>
-        <h5>$ git remote -v</h5>
-        <h4>> Remover um Repositório Remoto:</h4>
-        <h5>$ git remote remove "NOME REMOTE"</h5>
-        <h3>Reverter um Commit (❁´◡`❁)</h3>
-        <h4>> Reverter um Commit Específico:</h4>
-        <h5>$ git revert "ID COMMIT"</h5>
+        <a href="https://www.linkedin.com/in/brunomartinsgamedev/">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+            width="40px"
+            alt="LinkedIn"
+          />
+        </a>
       </div>
     </div>
-    <script src="scripts.js"></script>
+
+    <div class="section">
+      <h3 id="sobre">Sobre nós</h3>
+      <p>Somos Garotos de Programa de C#</p>
+    </div>
+
+    <div class="section">
+      <h3 id="contato">Contato</h3>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:bruno.abreu@edu.sc.senai.br" class="email-link"
+          >bruno.abreu@edu.sc.senai.br</a
+        >
+      </p>
+      <p><strong>Telefone:</strong> 4002-8922</p>
+    </div>
   </body>
 </html>
