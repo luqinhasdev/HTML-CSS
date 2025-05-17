@@ -1,51 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CALCULADORA</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Git Commands Database.</title>
+    <link rel="StyleSheet" href="style.css" />
   </head>
   <body>
-    <h1>CALCULADORA - SENAI</h1>
-    <br />
+    <h1 id="Title">Git Commands Database.</h1>
+    <h2 id="Credits">by luqinhasdev & cristovão-colombo</h2>
     <div class="container">
-      <div>
-        <input type="text" id="visor" value="0" />
+      <div id="info">
+        <h3>Configuração de Usuário (❁´◡`❁)</h3>
+        <h4>> Definição de Nome de Usuário:</h4>
+        <h5 class="h5copy">$ git config --global user.name "USERNAME"</h5>
+
+        <h4>> Definição de Email de Usuário:</h4>
+        <h5>$ config --global user.email "EMAIL"</h5>
+        <h3>Inicialização de Repositório (❁´◡`❁)</h3>
+
+        <h4>> Criação de Repositório Git:</h4>
+        <h5>$ git init</h5>
+        <h4>> Clonagem de Repositório Existente:</h4>
+        <h5>$ git clone "URL"</h5>
+
+        <h3>Verificação de Status (❁´◡`❁)</h3>
+        <h4>> Verificação do Status Atual:</h4>
+        <h5>$ git status</h5>
+
+        <h3>Trabalhando com Arquivos (❁´◡`❁)</h3>
+        <h4>> Adcionar Todos os Arquivos no Repositório:</h4>
+        <h5>$ git add .</h5>
+        <h4>> Adcionar Arquivos Específicos no Repositório:</h4>
+        <h5>$ git add "ARQUIVO"</h5>
+        <h4>> Remover Arquivos Específicos:</h4>
+        <h5>$ git rm "ARQUIVO"</h5>
+        <h4>> Desfazer Alterações em Arquivos Específicos:</h4>
+        <h5>$ git checkout -- "ARQUIVO"</h5>
+        <h3>Trabalhando com "Commits" (❁´◡`❁)</h3>
+        <h4>> Realizar uma Commit:</h4>
+        <h5>$ git commit -m "MENSAGEM"</h5>
+        <h4>> Commitar Todas as Mudanças:</h4>
+        <h5>$ git commit -a -m "MENSAGEM"</h5>
       </div>
-      <div id="line01">
-        <button id="dot" onclick="enviarPonto('.')">.</button>
-        <button id="sqrt" onclick="squareRoot()">SQRT</button>
-        <button id="exponenciation" onclick="operation('n²')">
-          x<sup>2</sup>
-        </button>
-        <button id="division" onclick="operation('/')">/</button>
+      <div id="info">
+        <h3>Trabalhando com "Branches" (❁´◡`❁)</h3>
+        <h4>> Criando uma Branch:</h4>
+        <h5>$ git branch "NOME"</h5>
+        <h4>> Transferindo para uma Branch:</h4>
+        <h5>$ git checkout "NOME"</h5>
+        <h4>> Criando e Transferindo para uma Branch:</h4>
+        <h5>$ git checkout -b "NOME"</h5>
+        <h4>> Mostrar Lista de Branches:</h4>
+        <h5>$ git branch</h5>
+        <h4>> Excluindo Branches Localmente:</h4>
+        <h5>$ git branch -d "NOME"</h5>
+        <h3>Sincronizando com Repositório Remoto (GitHub) (❁´◡`❁)</h3>
+        <h4>> Adcionando o Repositório Remoto:</h4>
+        <h5>$ git remote add origin "URL"</h5>
+        <h4>> Puxando Alterações do Repositório Remoto:</h4>
+        <h5>$ git pull origin "NOME BRANCH"</h5>
+        <h4>> Enviando Alterações ao Repositório Remoto:</h4>
+        <h5>$ git push origin "NOME BRANCH"</h5>
+        <h3>Histórico de Commits (❁´◡`❁)</h3>
+        <h4>> Ver o Histórico de Commits:</h4>
+        <h5>$ git log</h5>
+        <h4>> Ver o Histórico Conciso do Histórico de Commits:</h4>
+        <h5>$ git log --oneline</h5>
+        <h3>Mesclando Branches (❁´◡`❁)</h3>
+        <h4>> Mesclando uma Branch na Branch Atual:</h4>
+        <h5>$ git merge "NOME BRANCH"</h5>
+        <h3>Rebase de uma Branch (❁´◡`❁)</h3>
+        <h5>$ git rebase "NOME BRANCH"</h5>
       </div>
-      <div id="line02">
-        <button id="seven" onclick="enviarDigito(7)">7</button>
-        <button id="eight" onclick="enviarDigito(8)">8</button>
-        <button id="nine" onclick="enviarDigito(9)">9</button>
-        <button id="multiplication" onclick="operation('X')">X</button>
+      <div id="info">
+        <h3>Desfazendo Ações (❁´◡`❁)</h3>
+        <h4>> Desfazendo o Último Commit, porém Mantendo Alterações:</h4>
+        <h5>$ git reset --soft HEAD~1</h5>
+        <h4>> Desfazendo O Último Commit, Mantendo Alterações:</h4>
+        <h5>$ git reset --hard HEAD~1</h5>
+        <h3>Armazenar Informações Temporariamente (❁´◡`❁)</h3>
+        <h4>> Armazenar Alterações não Commitadas:</h4>
+        <h5>$ git stash</h5>
+        <h4>> Listar Stashes:</h4>
+        <h5>$ git stash list</h5>
+        <h4>> Aplicar o Stash mais Recente:</h4>
+        <h5>$ git stash apply</h5>
+        <h4>> Remover o Stash Aplicado:</h4>
+        <h5>$ git stash drop</h5>
+        <h3>Marcação de Versões</h3>
+        <h4>> Criar uma Tag:</h4>
+        <h5>$ git tag "NOME TAG"</h5>
+        <h4>> Listar Todas as Tags:</h4>
+        <h5>$ git tag</h5>
+        <h4>> Enviar Tags para o Repositório Remoto:</h4>
+        <h5>$ git push origin "NOME TAG"</h5>
+        <h3>Trabalhando com Remotes:</h3>
+        <h4>> Ver os Repositórios Remotos Configurados:</h4>
+        <h5>$ git remote -v</h5>
+        <h4>> Remover um Repositório Remoto:</h4>
+        <h5>$ git remote remove "NOME REMOTE"</h5>
+        <h3>Reverter um Commit (❁´◡`❁)</h3>
+        <h4>> Reverter um Commit Específico:</h4>
+        <h5>$ git revert "ID COMMIT"</h5>
       </div>
-      <div id="line03">
-        <button id="four" onclick="enviarDigito(4)">4</button>
-        <button id="five" onclick="enviarDigito(5)">5</button>
-        <button id="six" onclick="enviarDigito(6)">6</button>
-        <button id="subtraction" onclick="operation('-')">-</button>
-      </div>
-      <div id="line04">
-        <button id="one" onclick="enviarDigito(1)">1</button>
-        <button id="two" onclick="enviarDigito(2)">2</button>
-        <button id="three" onclick="enviarDigito(3)">3</button>
-        <button id="addition" onclick="operation('+')">+</button>
-      </div>
-      <div id="line05">
-        <button id="delete" onclick="limpaVisor()">DEL</button>
-        <button id="zero" onclick="enviarDigito(0)">0</button>
-        <button id="even" onclick="even()">=</button>
-      </div>
-      <p>by luqinhasdev</p>
     </div>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>

@@ -1,58 +1,70 @@
-body {
-  background-color: beige;
+#Title {
   text-align: center;
+  color: #5481e1;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
 }
 
-h1 {
-  font-family: MINECRAFT PE;
-  padding-top: 25px;
+#Credits {
+  text-align: center;
+  color: #9f5255;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  margin-top: 0;
+}
+
+body {
+  background-color: #1b1e33;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  text-align: center;
+  color: #0051ff;
+  font-style: italic;
+  font-weight: 200;
+}
+
+h4 {
+  text-align: center;
+  color: #5481e1;
+  font-style: italic;
+  font-weight: 200;
+}
+
+h5 {
+  text-align: center;
+  color: #e16a54;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 200;
+}
+
+h5:hover {
+  cursor: pointer;
+  color: aqua;
 }
 
 .container {
-  padding: 5px;
   display: flex;
-  flex-direction: column;
-  border: 6px solid black;
-  border-radius: 10%;
-  background-color: rgb(225, 225, 225);
-  margin-left: 38%;
-  margin-right: 38%;
-  border-style: outset;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
 }
 
-button {
-  width: 70px;
-  height: 70px;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 5px;
-  box-shadow: 3px 3px gray;
-}
-
-button:hover {
-  background-color: gray;
-}
-
-#even:hover {
-  background-color: cadetblue;
-}
-
-#even {
-  width: 140px;
-  background-color: beige;
-}
-
-#visor {
-  width: 280px;
-  height: 70px;
-  background-color: beige;
-  font-family: DS-Digital;
-  font-weight: 20;
-  font-size: 80px;
-  border-radius: 10px;
-  border-width: 5px;
-  text-align: right;
-  margin-bottom: 10px;
-  margin-top: 5px;
+.info {
+  flex: 1;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
