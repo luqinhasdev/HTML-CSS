@@ -1,88 +1,36 @@
-* {
-  border: 0;
-  padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+button {
+  border-width: 6px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  font-size: 100px;
+  border-left: 0;
+  border-top: 0;
+  vertical-align: top;
 }
 
-body {
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+button:hover {
+  background-color: azure;
 }
 
-#Title {
-  font-size: 100%;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
+.btJogo0,
+.btJogo1 {
+  padding-top: 0;
+  margin-top: 0;
 }
 
-.container {
-  display: flex;
-  padding: 20px;
-  width: fit-content;
-  height: 420px;
-  background-color: #fff;
-  border-radius: 30px;
-  gap: 30px;
-  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
+.btJogo2 {
+  border-bottom: 0;
 }
 
-h1 {
-  font-size: 18px;
+#bt02,
+#bt12,
+#bt22 {
+  border-right: 0;
 }
 
-h3 {
-  font-size: 16px;
-  font-weight: 400;
+button.disabled {
+  border-color: black;
 }
 
-input {
-  border: 1px solid #ddd;
-  height: 20px;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-#startbutton {
-  background-color: rgb(75, 173, 190);
-  padding: 10px;
-  border-radius: 10px;
-  color: #fff;
-}
-
-#checkbutton {
-  background-color: rgb(49, 209, 115);
-  padding: 10px;
-  border-radius: 10px;
-  color: #fff;
-}
-
-#panel {
-  font-size: 30px;
-}
-
-#wrongs {
-  font-size: 30px;
-  color: red;
-}
-
-.draw {
-  display: flex;
-  align-items: center;
-}
-
-#reset {
-  background-color: rgb(49, 177, 209);
-  padding: 10px;
-  border-radius: 10px;
-  color: #fff;
-}
-
-#buttonstart {
-  background-color: rgb(49, 209, 115);
-  padding: 10px;
-  border-radius: 10px;
-  color: #fff;
-}
+/* SEXO

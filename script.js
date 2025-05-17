@@ -1,51 +1,25 @@
-let check = [" _ "];
+let button,
+  quebraLinha,
+  jogada = 1,
+  vencedor = 0;
+let tabuleiro = new Array(3);
 
-let rightLetters = [];
+for (let i = 0; i < tabuleiro.length; i++) {
+  tabuleiro[i] = new Array(3);
+}
 
-let wrongLetters = [];
-
-let result = "";
-
-let numImages = 1;
-
-function enableStartButton() {
-  const Word = document.getElementById("secret").value;
-  if (Word.length >= 6) {
-    document.getElementById("buttonStart").disabled = false;
+for (let i = 0; i < tabuleiro.length; i++) {
+  quebraLinha = document.createElement("br");
+  document.body.append(quebraLinha);
+  for (let j = 0; j < tabuleiro[i].length; j++) {
+    button = document.createElement("button");
+    button.setAttribute("type", "button");
+    button.setAttribute("id", "bt" + i + "" + j);
+    button.setAttribute("class", "btJogo" + 1);
+    button.setAttribute("onclick", "marca(" + i + "," + j + ")");
+    button.append(document.createTextNode(""));
+    document.body.append(button);
   }
 }
 
-function startGame() {
-  document.getElementById("try").disabled = false;
-  document.getElementById("checkbutton").disabled = false;
-  document.getElementById("secret").disabled = true;
-  document.getElementById("buttonStart").disabled = true;
-  document.getElementById("try").focus();
-}
-
-function randomizeNames() {
-  const Word2 = document.querySelector("#secret").value.toLowerCase();
-  const Letter = document.querySelector("#try").value.toLowerCase();
-  document.getElementById("panel").innerHTML = "";
-  check = [];
-
-  for (let i = 0; i < Word2.length; i++) {
-    check.push(" _ ");
-  }
-
-  for (let i = 0; i < Word2.length; i++) {
-    if (Word2.charAt(i) === Letter) {
-      if (!rightLetters.includes(Letter)) {
-        rightLetters.push(Letter);
-      }
-      check[i] = Letter;
-    }
-  }
-
-  result = "";
-  for (let i = 0; i < check.length; i++) {
-    result += check[i] + " ";
-  }
-
-  document.getElementById("panel").innerHTML = result.trim();
-}
+// SEXO
