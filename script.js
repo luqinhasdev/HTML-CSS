@@ -1,23 +1,96 @@
-let button,
-  quebraLinha,
-  jogada = 1,
-  vencedor = 0;
-let tabuleiro = new Array(3);
+let primeiro, segundo, sinal;
 
-for (let i = 0; i < tabuleiro.length; i++) {
-  tabuleiro[i] = new Array(3);
+function enviarDigito(digito) {
+  const visor = document.getElementById("visor");
+
+  if (visor.value === "0" || visor.value === sinal) {
+    visor.value = "";
+  }
+
+  visor.value += digito;
 }
 
-for (let i = 0; i < tabuleiro.length; i++) {
-  quebraLinha = document.createElement("br");
-  document.body.append(quebraLinha);
-  for (let j = 0; j < tabuleiro[i].length; j++) {
-    button = document.createElement("button");
-    button.setAttribute("type", "button");
-    button.setAttribute("id", "bt" + i + "" + j);
-    button.setAttribute("class", "btJogo" + 1);
-    button.setAttribute("onclick", "marca(" + i + "," + j + ")");
-    button.append(document.createTextNode(""));
-    document.body.append(button);
+function enviarPonto(ponto) {
+  const visor = document.getElementById("visor");
+  if (!visor.value.includes(".")) {
+    visor.value += ponto;
   }
+}
+
+function limpaVisor() {
+  document.getElementById("visor").value = "0";
+  primeiro = "";
+  segundo = "";
+  sinal = "";
+}
+
+function operation(operacao) {
+  primeiro = document.getElementById("visor").value;
+  sinal = operacao;
+  document.getElementById("visor").value = operacao;
+}
+
+function squareRoot() {
+  primeiro = document.getElementById("visor").value;
+  let result = Math.sqrt(parseFloat(primeiro));
+  if (isNaN(result)) {
+    result = "Erro";
+  }
+  document.getElementById("visor").value = result;
+  primeiro = result;
+}
+
+function square() {
+  // Função para elevar um número ao quadrado
+  primeiro = document.getElementById("visor").value;
+  let result = Math.pow(parseFloat(primeiro), 2);
+  if (isNaN(result)) {
+    result = "Erro";
+  }
+  document.getElementById("visor").value = result;
+  primeiro = result;
+}
+
+function even() {
+  const visor = document.getElementById("visor");
+
+  if (sinal && visor.value !== sinal) {
+    segundo = visor.value;
+  }
+
+  let result;
+
+  switch (sinal) {
+    case "+":
+      result = parseFloat(primeiro) + parseFloat(segundo);
+      break;
+    case "-":
+      result = parseFloat(primeiro) - parseFloat(segundo);
+      break;
+    case "X":
+    case "x":
+      result = parseFloat(primeiro) * parseFloat(segundo);
+      break;
+    case "/":
+      if (parseFloat(segundo) === 0) {
+        result = "Erro: N/0";
+      } else {
+        result = parseFloat(primeiro) / parseFloat(segundo);
+      }
+      break;
+    case "n²":
+      result = Math.pow(parseFloat(primeiro), parseFloat(segundo));
+      break;
+    default:
+      result = visor.value;
+      break;
+  }
+
+  if (isNaN(result)) {
+    result = "Erro";
+  }
+
+  visor.value = result;
+  primeiro = result;
+  sinal = "";
 }

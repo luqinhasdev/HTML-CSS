@@ -3,14 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JOGO DA VELHA</title>
-    <script src="script.js" defer></script>
+    <title>CALCULADORA</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>JOGO DA VELHA</h1>
-    <hr />
-    <h2>CLIQUE NA CASA QUE DESEJA JOGAR! :D</h2>
-    <br /><br />
+    <h1>CALCULADORA - SENAI</h1>
+    <br />
+    <div class="container">
+      <div>
+        <input type="text" id="visor" value="0" />
+      </div>
+      <div id="line01">
+        <button id="dot" onclick="enviarPonto('.')">.</button>
+        <button id="sqrt" onclick="squareRoot()">SQRT</button>
+        <button id="exponenciation" onclick="operation('n²')">
+          x<sup>2</sup>
+        </button>
+        <button id="division" onclick="operation('/')">/</button>
+      </div>
+      <div id="line02">
+        <button id="seven" onclick="enviarDigito(7)">7</button>
+        <button id="eight" onclick="enviarDigito(8)">8</button>
+        <button id="nine" onclick="enviarDigito(9)">9</button>
+        <button id="multiplication" onclick="operation('X')">X</button>
+      </div>
+      <div id="line03">
+        <button id="four" onclick="enviarDigito(4)">4</button>
+        <button id="five" onclick="enviarDigito(5)">5</button>
+        <button id="six" onclick="enviarDigito(6)">6</button>
+        <button id="subtraction" onclick="operation('-')">-</button>
+      </div>
+      <div id="line04">
+        <button id="one" onclick="enviarDigito(1)">1</button>
+        <button id="two" onclick="enviarDigito(2)">2</button>
+        <button id="three" onclick="enviarDigito(3)">3</button>
+        <button id="addition" onclick="operation('+')">+</button>
+      </div>
+      <div id="line05">
+        <button id="delete" onclick="limpaVisor()">DEL</button>
+        <button id="zero" onclick="enviarDigito(0)">0</button>
+        <button id="even" onclick="even()">=</button>
+      </div>
+      <p>by luqinhasdev</p>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,34 +1,58 @@
+body {
+  background-color: beige;
+  text-align: center;
+}
+
+h1 {
+  font-family: MINECRAFT PE;
+  padding-top: 25px;
+}
+
+.container {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 6px solid black;
+  border-radius: 10%;
+  background-color: rgb(225, 225, 225);
+  margin-left: 38%;
+  margin-right: 38%;
+  border-style: outset;
+}
+
 button {
-  border-width: 6px;
-  width: 100px;
-  height: 100px;
-  background-color: white;
-  font-size: 100px;
-  border-left: 0;
-  border-top: 0;
-  vertical-align: top;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  box-shadow: 3px 3px gray;
 }
 
 button:hover {
-  background-color: azure;
+  background-color: gray;
 }
 
-.btJogo0,
-.btJogo1 {
-  padding-top: 0;
-  margin-top: 0;
+#even:hover {
+  background-color: cadetblue;
 }
 
-.btJogo2 {
-  border-bottom: 0;
+#even {
+  width: 140px;
+  background-color: beige;
 }
 
-#bt02,
-#bt12,
-#bt22 {
-  border-right: 0;
-}
-
-button.disabled {
-  border-color: black;
+#visor {
+  width: 280px;
+  height: 70px;
+  background-color: beige;
+  font-family: DS-Digital;
+  font-weight: 20;
+  font-size: 80px;
+  border-radius: 10px;
+  border-width: 5px;
+  text-align: right;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
