@@ -1,28 +1,70 @@
 const quizData = [
   {
-    question: "Qual planeta é conhecido como o planeta vermelho?",
-    options: ["Terra", "Marte", "Júpiter", "Vênus"],
-    answer: "Marte",
+    question:
+      "Qual linguagem é usada principalmente para estilizar páginas web?",
+    options: ["HTML", "JavaScript", "CSS", "Python"],
+    answer: "CSS",
   },
   {
-    question: "Qual é a fórmula da água?",
-    options: ["H2O", "CO2", "NaCl", "O2"],
-    answer: "H2O",
-  },
-  {
-    question: "Qual cientista desenvolveu a teoria da relatividade?",
+    question: "O que significa 'HTML'?",
     options: [
-      "Isaac Newton",
-      "Albert Einstein",
-      "Galileu Galilei",
-      "Marie Curie",
+      "Hyperlinks and Text Markup Language",
+      "Home Tool Markup Language",
+      "HyperText Markup Language",
+      "Hyper Tool Main Language",
     ],
-    answer: "Albert Einstein",
+    answer: "HyperText Markup Language",
   },
   {
-    question: "Qual é o maior órgão do corpo humano?",
-    options: ["Fígado", "Pele", "Coração", "Pulmão"],
-    answer: "Pele",
+    question: "Qual desses é um framework JavaScript para interfaces?",
+    options: ["Django", "Flask", "React", "Laravel"],
+    answer: "React",
+  },
+  {
+    question:
+      "Qual estrutura de controle usamos para repetir um bloco de código?",
+    options: ["if", "else", "loop", "switch"],
+    answer: "loop",
+  },
+  {
+    question: "O que um 'array' armazena?",
+    options: [
+      "Funções",
+      "Números inteiros",
+      "Uma coleção de valores",
+      "Classes",
+    ],
+    answer: "Uma coleção de valores",
+  },
+  {
+    question: "Qual linguagem é mais usada para scripts do lado do servidor?",
+    options: ["JavaScript", "PHP", "HTML", "CSS"],
+    answer: "PHP",
+  },
+  {
+    question: "Qual desses não é um tipo de dado primitivo em JavaScript?",
+    options: ["String", "Number", "Boolean", "Array"],
+    answer: "Array",
+  },
+  {
+    question: "O que significa 'NaN' em JavaScript?",
+    options: [
+      "Not a Number",
+      "Negative and Null",
+      "No active Network",
+      "Name and Number",
+    ],
+    answer: "Not a Number",
+  },
+  {
+    question: "Qual método JavaScript remove o último item de um array?",
+    options: ["shift()", "pop()", "remove()", "slice()"],
+    answer: "pop()",
+  },
+  {
+    question: "Qual operador é usado para comparar valor e tipo em JavaScript?",
+    options: ["==", "=", "!=", "==="],
+    answer: "===",
   },
 ];
 
